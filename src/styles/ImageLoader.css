@@ -1,0 +1,95 @@
+.image-loader {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background: #f5eee3;
+}
+
+/* Actual image */
+
+.image-loader img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  opacity: 0;
+
+  transition: opacity 0.35s ease;
+}
+
+/* Image successfully loaded */
+
+.image-loader.loaded img {
+  opacity: 1;
+}
+
+
+/* Loading */
+
+.image-loading {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #f5eee3;
+
+  z-index: 2;
+}
+
+.image-spinner {
+  width: 24px;
+  height: 24px;
+
+  border: 2px solid #dfd0bb;
+
+  border-top-color: #b48a50;
+
+  border-radius: 50%;
+
+  animation: imageSpin 0.8s linear infinite;
+}
+
+
+/* Broken image */
+
+.image-fallback {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #f5eee3;
+
+  color: #a08d75;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+@keyframes imageSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}

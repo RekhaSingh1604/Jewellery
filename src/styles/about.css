@@ -1,0 +1,350 @@
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+  width: 100%;
+
+  padding: 110px 0;
+
+  background: #110d09;
+
+  color: #ffffff;
+}
+
+.about-container {
+  width: min(1180px, 90%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 90px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.about-image-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+.about-image {
+  width: 100%;
+
+  height: 570px;
+
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* Small EST box */
+
+.about-image-box {
+  position: absolute;
+
+  right: -25px;
+
+  bottom: 35px;
+
+  width: 105px;
+
+  height: 105px;
+
+  background: #e7c58d;
+
+  color: #251b11;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.about-image-box span {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 8px;
+
+  letter-spacing: 2px;
+}
+
+.about-image-box strong {
+  margin-top: 5px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 31px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.about-content {
+  max-width: 520px;
+}
+
+.about-label {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 3px;
+
+  font-weight: 500;
+
+  color: #c8a268;
+}
+
+.about-content h2 {
+  margin: 0 0 28px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(45px, 5vw, 67px);
+
+  line-height: 0.98;
+
+  font-weight: 500;
+
+  color: #f5eee5;
+}
+
+.about-main-text {
+  margin-bottom: 15px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.about-secondary-text {
+  margin-bottom: 35px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.about-features {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+
+  margin-bottom: 35px;
+}
+
+.about-feature {
+  display: flex;
+
+  gap: 13px;
+
+  align-items: flex-start;
+}
+
+.about-feature > span {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 18px;
+
+  color: #c8a268;
+}
+
+.about-feature h3 {
+  margin: 0 0 5px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+.about-feature p {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.about-button {
+  padding: 14px 25px;
+
+  border: 1px solid #d1ad70;
+
+  background: #d1ad70;
+
+  color: #21170d;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.7px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.about-button:hover {
+  background: transparent;
+
+  color: #d1ad70;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .about-section {
+    padding: 85px 0;
+  }
+
+  .about-container {
+    gap: 45px;
+  }
+
+  .about-image {
+    height: 470px;
+  }
+
+  .about-image-box {
+    right: -15px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .about-section {
+    padding: 70px 0;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .about-image {
+    height: 430px;
+  }
+
+  .about-content {
+    max-width: 100%;
+
+    text-align: center;
+  }
+
+  .about-main-text,
+  .about-secondary-text {
+    font-size: 11px;
+  }
+
+  .about-features {
+    text-align: left;
+  }
+
+  .about-image-box {
+    right: 15px;
+
+    bottom: 20px;
+
+    width: 90px;
+
+    height: 90px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+  .about-image {
+    height: 350px;
+  }
+
+  .about-content h2 {
+    font-size: 45px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .about-button {
+    width: 100%;
+  }
+
+}

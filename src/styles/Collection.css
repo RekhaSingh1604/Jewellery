@@ -1,0 +1,381 @@
+/* =========================================
+   JEWELLERY CATEGORIES
+========================================= */
+
+.jewellery-categories {
+  width: 100%;
+  padding: 100px 0;
+
+  background: #f8f7f3;
+}
+
+.categories-container {
+  width: min(1180px, 90%);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.categories-header {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  color: #b38a4b;
+}
+
+.categories-header h2 {
+  margin: 0 0 15px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(42px, 5vw, 64px);
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  color: #211a13;
+}
+
+.categories-header p {
+  max-width: 520px;
+
+  margin: 0 auto;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+
+  font-weight: 400;
+
+  color: #77716a;
+}
+
+
+/* =========================================
+   CARD GRID
+========================================= */
+
+.category-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.category-card {
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 5px 25px rgba(40, 30, 20, 0.07);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 15px 40px rgba(40, 30, 20, 0.12);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.category-image {
+  width: 100%;
+
+  height: 300px;
+
+  overflow: hidden;
+
+  background: #f7f5f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+.category-card:hover .category-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.category-content {
+  text-align: center;
+
+  padding: 0 20px 24px;
+
+  background: #ffffff;
+}
+
+.category-content h3 {
+  margin: 0;
+
+  padding-top: 20px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 25px;
+
+  line-height: 1.1;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  color: #2a2118;
+}
+
+.category-content p {
+  margin: 7px 0 18px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 0.8px;
+
+  color: #8b847c;
+}
+
+
+/* =========================================
+   SHOP BUTTON
+========================================= */
+
+.category-button {
+  width: 100%;
+
+  border: none;
+
+  padding: 13px 15px;
+
+  background: #eacb91;
+
+  color: #332515;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.category-button:hover {
+  background: #dcb878;
+
+  letter-spacing: 2.2px;
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1400px) {
+
+  .categories-container {
+    width: min(1250px, 90%);
+  }
+
+  .category-grid {
+    gap: 30px;
+  }
+
+  .category-image {
+    height: 340px;
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .jewellery-categories {
+    padding: 80px 0;
+  }
+
+  .categories-container {
+    width: 90%;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+  .category-image {
+    height: 280px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL TABLET / LARGE MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .jewellery-categories {
+    padding: 70px 0;
+  }
+
+  .categories-header {
+    margin-bottom: 40px;
+  }
+
+  .categories-header h2 {
+    font-size: 46px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 430px;
+
+    margin: 0 auto;
+
+    gap: 25px;
+  }
+
+  .category-image {
+    height: 330px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .jewellery-categories {
+    padding: 60px 0;
+  }
+
+  .categories-container {
+    width: 90%;
+  }
+
+  .categories-header {
+    margin-bottom: 35px;
+  }
+
+  .section-label {
+    font-size: 8px;
+    letter-spacing: 2.5px;
+  }
+
+  .categories-header h2 {
+    font-size: 42px;
+  }
+
+  .categories-header p {
+    font-size: 11px;
+
+    line-height: 1.7;
+  }
+
+  .category-image {
+    height: 300px;
+  }
+
+  .category-content {
+    padding-bottom: 20px;
+  }
+
+  .category-content h3 {
+    font-size: 23px;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+  .category-image {
+    height: 260px;
+  }
+
+  .categories-header h2 {
+    font-size: 38px;
+  }
+
+}
+
+.category-image .image-loader {
+  width: 100%;
+  height: 100%;
+}
